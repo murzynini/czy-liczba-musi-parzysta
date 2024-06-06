@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8" />	
+<script type="text/javascript">	
+		function sprawdz()
+		{
+			var liczba = document.getElementById("eueue").value;			
+			if (liczba%2==0) document.getElementById("sprawdzam").innerHTML="musi Parzysta";
+			else document.getElementById("sprawdzam").innerHTML="musi Nieparzysta";					
+		}	
+</script>
+</head>
+<body>
+<input type="text" id="eueue" />
+<input type="submit" value="Sprawdz to" onclick="sprawdz()"/>	
+<div id="sprawdzam"></div>
+</body>
+</html>
+
